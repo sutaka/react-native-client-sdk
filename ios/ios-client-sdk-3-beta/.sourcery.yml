@@ -1,0 +1,10 @@
+sources:
+  - LaunchDarkly/
+templates:
+  - SourceryTemplates/
+output: LaunchDarkly/GeneratedCode/
+
+args:
+  app: LaunchDarkly
+  imports: 
+  - DarklyEventSource

@@ -1,0 +1,5 @@
+framework module LaunchDarkly {
+    umbrella header "LaunchDarkly.h"
+    export *
+    module * { export * }
+}

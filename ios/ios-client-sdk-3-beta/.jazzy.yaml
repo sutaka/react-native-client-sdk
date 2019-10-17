@@ -1,0 +1,78 @@
+module: LaunchDarkly
+author: LaunchDarkly
+author_url: http://launchdarkly.com
+github_url: https://github.com/launchdarkly/ios-client
+clean: true
+include:
+  - "LaunchDarkly/LaunchDarkly/**"
+exclude:
+  - "LaunchDarkly/LaunchDarkly/User/CacheableUserFlags.swift"
+  - "LaunchDarkly/LaunchDarkly/FeatureFlag/*"
+  - "LaunchDarkly/LaunchDarkly/FeatureFlag/FlagChange/Flag*"
+  - "LaunchDarkly/LaunchDarkly/FeatureFlag/FlagRequestTracking/*"
+  - "LaunchDarkly/LaunchDarkly/FeatureFlag/FlagValue/*"
+  - "LaunchDarkly/LaunchDarkly/ServiceObjects/*"
+  - "LaunchDarkly/LaunchDarkly/Networking/*"
+  - "LaunchDarkly/LaunchDarkly/Extensions/*"
+
+copyright: 'Copyright © 2019 Catamorphic Co.'
+
+theme: fullwidth
+
+custom_categories:
+  - name: LaunchDarkly
+    children:
+    - LDClient
+    - LDConfig
+    - LDUser
+    - LDFlagKey
+
+  - name: Enumerations
+    children:
+    - LDStreamingMode
+    - LDFlagValueSource
+    - LDFlagValue
+
+  - name: Flag Changes
+    children:
+    - LDChangedFlag
+    - LDFlagChangeOwner
+    - LDFlagChangeHandler
+    - LDFlagCollectionChangeHandler
+    - LDFlagsUnchangedHandler
+    - LDErrorHandler
+
+  - name: LD Protocols
+    children:
+    - LDFlagValueConvertible
+
+  - name: Objective-C
+    children:
+    - ObjcLDClient
+    - ObjcLDConfig
+    - ObjcLDUser
+
+  - name: Obj-C Enumerations
+    children:
+    - ObjcLDFlagValue
+    - ObjcLDFlagValueSource
+    - NSString
+
+  - name: Obj-C Variation Values
+    children:
+    - ObjcLDBoolVariationValue
+    - ObjcLDIntegerVariationValue
+    - ObjcLDDoubleVariationValue
+    - ObjcLDStringVariationValue
+    - ObjcLDArrayVariationValue
+    - ObjcLDDictionaryVariationValue
+
+  - name: Obj-C Changed Flags
+    children:
+    - ObjcLDChangedFlag
+    - ObjcLDBoolChangedFlag
+    - ObjcLDIntegerChangedFlag
+    - ObjcLDDoubleChangedFlag
+    - ObjcLDStringChangedFlag
+    - ObjcLDArrayChangedFlag
+    - ObjcLDDictionaryChangedFlag
